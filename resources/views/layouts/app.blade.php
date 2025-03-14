@@ -6,13 +6,13 @@
     <title>@yield('title')</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold text-center text-gray-700">@yield('title')</h2>
-
-        @yield('content')
-    </div>
+<body class="h-screen bg-gray-100">
+    @auth
+    @include('components.navbar')
+    @endauth
+    @yield('content')
 
     @if(session('success'))
         <script>
