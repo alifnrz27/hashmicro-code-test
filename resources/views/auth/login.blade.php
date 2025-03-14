@@ -7,7 +7,10 @@
     @csrf
     <div>
         <label class="block text-gray-700">Email</label>
-        <input type="email" name="email" class="w-full p-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <input type="email" name="email" value="{{ old('email') }}" class="w-full p-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        @error('email')
+            <p class="mt-1 text-sm text-red-500">{{ $message }}</p>
+        @enderror
     </div>
 
     <div class="mt-4">
