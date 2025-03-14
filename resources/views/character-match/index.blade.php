@@ -14,7 +14,7 @@
             </div>
 
             <div class="mt-4">
-                <label class="block text-gray-700">Password</label>
+                <label class="block text-gray-700">Second Word</label>
                 <input type="text" name="input2" value="{{ old('input2') }}" class="w-full p-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
             </div>
 
