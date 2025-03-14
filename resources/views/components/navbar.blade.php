@@ -1,7 +1,7 @@
 <nav class="bg-white shadow-md p-4 fixed w-screen" x-data="{ open: false }">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
         <!-- Logo -->
-        <a href="{{ route('login') }}" class="text-2xl font-bold text-blue-600">alifnrz</a>
+        <a href="{{ route('login') }}" class="text-2xl font-bold text-blue-600">alifnrz27</a>
 
         <!-- Menu Items (Desktop) -->
         <div class="hidden md:flex space-x-6">
